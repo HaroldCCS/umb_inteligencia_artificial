@@ -1,0 +1,49 @@
+====================================================================
+ AGENTE INTEGRADOR — IA CLASICA — PARCIAL PRACTICO 1
+ Sector: rendimiento deportivo / gestion de carga del atleta
+====================================================================
+[OBSERVE  ] Evidencia recibida: F = Alta (fatiga)
+[OBSERVE  ] Fuente: HRV baja + sueno fragmentado (Kinexon, miercoles)
+
+[POSTERIOR] P(C=Alta | F=Alta)  = 0.6250   (prior 0.400)
+[POSTERIOR] P(E=Exito | F=Alta) = 0.3250   (marginal 0.5780)
+[POSTERIOR] Umbral de decision = 0.400
+[POSTERIOR] POR DEBAJO del umbral -> META CONSERVADORA
+
+[PLAN     ] Meta STRIPS (conservadora):
+[PLAN     ]     · atleta(recuperado)
+[PLAN     ]     · co2_acumulado(bajo)
+[PLAN     ]     · listo_para_competir
+[PLAN     ]     · rendimiento(alto)
+[PLAN     ]     · reserva_energetica(alta)
+[PLAN     ]     · riesgo_lesion(bajo)
+[PLAN     ] Motor de busqueda: A* sobre el espacio de estados
+[PLAN     ]   1. Aplicar Sesion Regenerativa          CO2 1
+[PLAN     ]   2. Monitorear Biomarcadores             CO2 1
+[PLAN     ]   3. Aplicar Descarga Extra               CO2 1
+[PLAN     ]   4. Ajustar Plan Nutricional             CO2 1
+[PLAN     ]   5. Ejecutar Entrenamiento Especifico    CO2 5
+[PLAN     ]   6. Validar Estado Competitivo           CO2 1
+[PLAN     ] CO2 metabolico total: 10 kg CO2eq | estados expandidos: 10
+
+[DECISION ] Min-Max (profundidad 3, alfa-beta, heuristica disenada)
+[DECISION ] Rama escogida : Moderada -> Alta -> Descansar
+[DECISION ] Valor garantizado: +19.0
+[DECISION ] Nodos expandidos: 20 | podas: 3 | tiempo: 0.080 ms
+
+[CONTRASTE] Utilidad esperada ponderada por Bayes:
+[CONTRASTE]     Carga Alta      ->   +4.5
+[CONTRASTE]     Carga Moderada  ->  +35.1
+[CONTRASTE] Bayes elegiria: Carga Moderada (+35.1)
+[CONTRASTE] COINCIDE con Min-Max: decision robusta.
+
+[ACCION   ] Recomendacion al cuerpo tecnico:
+[ACCION   ]   · Carga semanal: MODERADA
+[ACCION   ]   · Uso del jugador el fin de semana: DESCANSAR
+[ACCION   ]   · Ejecutar el plan de 6 pasos (10 kg CO2eq)
+[ACCION   ]   · Asumiendo la peor respuesta del organismo (fatiga alta)
+
+[ETICA    ] Esto es una RECOMENDACION, no un veredicto. La decision
+[ETICA    ] final es del cuerpo medico (human-in-command), segun el
+[ETICA    ] Marco Etico para la IA en Colombia (2021).
+====================================================================

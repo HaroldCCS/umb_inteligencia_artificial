@@ -4,10 +4,11 @@
 > registro en `proyecto/decisiones.md`.**
 > 📅 Contexto: el parcial se entrega el **jueves 17 de septiembre**. Quedan 3 días.
 
-_Resueltas y archivadas el 14-sep: fecha de entrega · estado real de la guía 5 · si se mantiene el
-factor λ de huella de carbono · variables de la red bayesiana. Ver `proyecto/decisiones.md`._
+_Resueltas y archivadas el 14-sep: fecha de entrega · estado real de la guía 5 · factor λ ·
+variables de la red bayesiana · formato del código del parcial. Ver `proyecto/decisiones.md`._
 
-✅ **Guía 6 entregada** (14-sep). Lo que queda abierto es solo sobre el parcial.
+✅ **Guía 6 entregada** y ✅ **código del parcial completo** (14-sep).
+Lo que queda abierto es la **presentación** y el reparto de la exposición.
 
 ---
 
@@ -37,20 +38,6 @@ futbolística, dímelo y los ajusto — es cuestión de minutos.
 ---
 
 ## 🟡 DECISIONES DE DISEÑO (tengo un default; confírmalo o cámbialo)
-
-### P2. ¿Script `.py` o notebook para el parcial?
-Mi propuesta: **módulos `.py`** (`dominio`, `bayes`, `strips`, `minmax`, `agente`) + README,
-porque genera los 4 PNG y el `agent_log.txt` con un solo `python agente.py`, que es exactamente lo
-que el profesor pide poder ejecutar. Si quieren notebook para la demo, lo hago **además**,
-importando los módulos (sin duplicar código).
-
-- **(a)** Solo módulos `.py` + README ← *mi recomendación*
-- **(b)** `.py` + notebook de demo
-- **(c)** Solo notebook (como vienen trabajando las guías)
-
-**Respuesta:**
-
----
 
 ### P3. ¿La presentación conceptual se hace en Gamma otra vez?
 Las guías 1 y 2 se presentaron en **Gamma**. Si es así, dejo el contenido estructurado en markdown

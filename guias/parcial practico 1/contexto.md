@@ -63,23 +63,54 @@ Carpeta `recursos/` inexistente. **Todo el material conceptual sale de guías an
 **Jueves 17 de septiembre de 2026.**
 
 ## Estado
-🔴 **No desarrollado.** Carpeta `entregables/` vacía.
-👉 Ver `planeacion.md` en esta misma carpeta (versión 2, con cronograma de 3 días).
+✅ **DESARROLLADO** (14-sep-2026). Código completo, verificado y ejecutable.
 
-## Punto de partida real
-La **guía 5 ya está completa** (`Algoritmo_Rendimiento_deportivo.ipynb`): tiene Min-Max con poda
-α-β y STRIPS forward/backward con detección de bloqueos, en el dominio de **gestión de carga del
-atleta**. Eso es aproximadamente el **60 % del código del parcial**.
+### Qué entregamos (`entregables/`)
 
-**Lo que falta construir:**
-1. El módulo **bayesiano** (que además cierra la guía 6).
-2. El **agente integrador** y su `agent_log.txt`.
-3. Los **4 PNG con nombres exactos** y el README.
-4. Generalizar el árbol Min-Max a **profundidades {2,3,4}** y **3 escenarios** (hoy es un
-   diccionario fijo de profundidad 3).
-5. Añadir **A\*** como motor de la búsqueda STRIPS (requisito explícito del profesor en la guía 5).
+**Código** — 7 módulos, sin librerías nuevas (`matplotlib`, `networkx`, `pandas`):
+| Archivo | Qué hace |
+|---|---|
+| `dominio.py` | Métricas, función de utilidad, escenarios, constantes ajustables |
+| `bayes.py` | Red bayesiana C→F→E (la misma de la guía 6) |
+| `strips.py` | Acciones STRIPS, forward, backward, **A\***, detección de bloqueos |
+| `minmax.py` | Árbol procedural, poda α-β, heurística de evaluación |
+| `agente.py` | **Punto de entrada.** Flujo integrador completo |
+| `experimentos.py` | Los dos bloques extra |
+| `test_regresion.py` | 31 comprobaciones — todas pasan |
 
-**Deuda técnica heredada de la guía 5** (detallada en `../guia 5/contexto.md`): `ruta_optima` guarda
-un solo nodo en vez de la rama completa, el conteo de nodos podados es aproximado, y
-`busqueda_forward` devuelve un número variable de elementos. Todo eso hay que arreglarlo porque el
-parcial **califica exactamente esas cosas** (rama resaltada, nodos expandidos medidos).
+**Documentos:** `README.md` (cómo ejecutar) · `explicacion_algoritmo.md` (alto y bajo nivel).
+
+**Salidas:** los 4 PNG con nombres exactos + `agent_log.txt` + `sensibilidad.png` +
+`experimentos_log.txt` + los dos CSV.
+
+`python agente.py` genera todo lo obligatorio de una sola ejecución.
+
+### Resultados
+| | |
+|---|---|
+| Min-Max | `Carga Moderada → Fatiga Alta → Descansar`, valor **+19**, nodos 28→20 (−29 %) |
+| STRIPS | plan estándar 5 acciones / CO₂ 9 · conservador 6 / CO₂ 10 |
+| Bayes | `P(E=Éxito)` 57.8 % → **32.5 %** con evidencia `F=Alta` |
+| Contraste | Min-Max garantiza **+19**, Bayes espera **+35.1**. Coinciden en la decisión |
+
+### Hallazgos de los bloques extra
+1. **α-β da idéntica decisión y valor que la versión básica en los 12 casos** — su garantía
+   teórica, verificada. Ahorro: −33 % de nodos.
+2. **La decisión se estabiliza en profundidad 3.** Con profundidad 2 el agente elige *Carga Baja*
+   porque no alcanza a ver que todavía puede **descansar** al jugador; sin esa mitigación, la
+   única forma de protegerlo es entrenarlo menos. Con profundidad 4 la decisión no cambia y el
+   coste sube de 28 a 64 nodos. → **profundidad 3 es la configuración correcta**.
+3. **La heurística solo cambia la decisión a profundidad 2.** La lección no es que una evaluación
+   sea superior, sino que ninguna heurística compensa cortar la búsqueda demasiado pronto.
+4. **Sensibilidad:** el plan cambia solo entre prior 0.10 y 0.25; de ahí en adelante es estable.
+   **La decisión de Min-Max no se mueve nunca** — no es defecto: Min-Max razona sobre el peor
+   caso, no sobre probabilidades.
+5. **A\* mejora al encadenamiento forward:** CO₂ 9 vs 10 en la meta estándar.
+6. **Anomalía de Sussman demostrada, no afirmada:** el planificador lineal se bloquea si resuelve
+   `atleta(recuperado)` antes que `reserva_energetica(alta)`, porque `Ajustar_Plan_Nutricional`
+   borra `atleta(en_recuperacion)` y esa precondición ya no se puede recuperar.
+
+### Pendiente
+- [ ] Presentación conceptual (Gamma) — ver `planeacion.md` §8 para el guion de 5 min.
+- [ ] Ensayar la demo cronometrada.
+- [ ] `pip install matplotlib networkx pandas` en el equipo donde se haga la demo.

@@ -1,0 +1,6 @@
+P(C=Alta) prior,P(C=Alta|F=Alta),P(E=Exito|F=Alta),Supera umbral,Meta STRIPS,Pasos del plan,CO2 del plan,Decision Min-Max,Valor
+0.1,0.2174,0.4065,SI,estandar,5,9,Moderada,19.0
+0.25,0.4545,0.3591,NO,conservadora,6,10,Moderada,19.0
+0.4,0.625,0.325,NO,conservadora,6,10,Moderada,19.0
+0.6,0.7895,0.2921,NO,conservadora,6,10,Moderada,19.0
+0.8,0.9091,0.2682,NO,conservadora,6,10,Moderada,19.0

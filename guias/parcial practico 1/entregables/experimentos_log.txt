@@ -1,0 +1,203 @@
+==============================================================================
+  BLOQUE 1 — COMPARACION DE HEURISTICAS Y PODA EN MIN-MAX
+==============================================================================
+
+  ### 0. Base (Guia 5)
+ Profundidad                    Version  Tiempo (ms)  Nodos  Hojas eval.  Podas Decision  Valor
+           2        (i)  Min-Max basico       0.0164     10            6      0 Moderada   20.0
+           2   (ii) Min-Max + alfa-beta       0.0134      9            5      1 Moderada   20.0
+           2 (iii) Min-Max + heuristica       0.0165     10            6      0     Baja   13.7
+           2   (iii+) heuristica + poda       0.0162     10            6      0     Baja   13.7
+           3        (i)  Min-Max basico       0.0458     28           18      0 Moderada   24.0
+           3   (ii) Min-Max + alfa-beta       0.0289     20           11      3 Moderada   24.0
+           3 (iii) Min-Max + heuristica       0.0470     28           18      0 Moderada   19.0
+           3   (iii+) heuristica + poda       0.0300     20           11      3 Moderada   19.0
+           4        (i)  Min-Max basico       0.1310     64           36      0 Moderada   16.0
+           4   (ii) Min-Max + alfa-beta       0.0674     36           16      9 Moderada   16.0
+           4 (iii) Min-Max + heuristica       0.1356     64           36      0 Moderada   14.0
+           4   (iii+) heuristica + poda       0.0820     41           20      7 Moderada   14.0
+
+  ### 1. Atleta fresco
+ Profundidad                    Version  Tiempo (ms)  Nodos  Hojas eval.  Podas Decision  Valor
+           2        (i)  Min-Max basico       0.0134     10            6      0 Moderada   20.0
+           2   (ii) Min-Max + alfa-beta       0.0123      9            5      1 Moderada   20.0
+           2 (iii) Min-Max + heuristica       0.0158     10            6      0     Baja   22.7
+           2   (iii+) heuristica + poda       0.0163     10            6      0     Baja   22.7
+           3        (i)  Min-Max basico       0.0403     28           18      0 Moderada   24.0
+           3   (ii) Min-Max + alfa-beta       0.0314     20           11      3 Moderada   24.0
+           3 (iii) Min-Max + heuristica       0.0497     28           18      0 Moderada   28.0
+           3   (iii+) heuristica + poda       0.0322     20           11      3 Moderada   28.0
+           4        (i)  Min-Max basico       0.1516     64           36      0 Moderada   16.0
+           4   (ii) Min-Max + alfa-beta       0.0733     36           16      9 Moderada   16.0
+           4 (iii) Min-Max + heuristica       0.1518     64           36      0 Moderada   23.0
+           4   (iii+) heuristica + poda       0.0881     41           20      7 Moderada   23.0
+
+  ### 2. Atleta cargado
+ Profundidad                    Version  Tiempo (ms)  Nodos  Hojas eval.  Podas Decision  Valor
+           2        (i)  Min-Max basico       0.0154     10            6      0 Moderada   16.0
+           2   (ii) Min-Max + alfa-beta       0.0131      9            5      1 Moderada   16.0
+           2 (iii) Min-Max + heuristica       0.0162     10            6      0     Baja   -3.3
+           2   (iii+) heuristica + poda       0.0168     10            6      0     Baja   -3.3
+           3        (i)  Min-Max basico       0.0432     28           18      0 Moderada   20.0
+           3   (ii) Min-Max + alfa-beta       0.0320     20           11      3 Moderada   20.0
+           3 (iii) Min-Max + heuristica       0.0471     28           18      0 Moderada    2.0
+           3   (iii+) heuristica + poda       0.0343     20           11      3 Moderada    2.0
+           4        (i)  Min-Max basico       0.1448     64           36      0 Moderada   12.0
+           4   (ii) Min-Max + alfa-beta       0.0740     36           16      9 Moderada   12.0
+           4 (iii) Min-Max + heuristica       0.1534     64           36      0 Moderada   -3.0
+           4   (iii+) heuristica + poda       0.0931     41           20      7 Moderada   -3.0
+
+  ### 3. Historial de lesion
+ Profundidad                    Version  Tiempo (ms)  Nodos  Hojas eval.  Podas Decision  Valor
+           2        (i)  Min-Max basico       0.0153     10            6      0 Moderada   16.0
+           2   (ii) Min-Max + alfa-beta       0.0143      9            5      1 Moderada   16.0
+           2 (iii) Min-Max + heuristica       0.0164     10            6      0     Baja   -1.3
+           2   (iii+) heuristica + poda       0.0173     10            6      0     Baja   -1.3
+           3        (i)  Min-Max basico       0.0434     28           18      0 Moderada   20.0
+           3   (ii) Min-Max + alfa-beta       0.0297     20           11      3 Moderada   20.0
+           3 (iii) Min-Max + heuristica       0.0484     28           18      0 Moderada    4.0
+           3   (iii+) heuristica + poda       0.0323     20           11      3 Moderada    4.0
+           4        (i)  Min-Max basico       0.1364     64           36      0 Moderada   12.0
+           4   (ii) Min-Max + alfa-beta       0.0708     36           16      9 Moderada   12.0
+           4 (iii) Min-Max + heuristica       0.1456     64           36      0 Moderada   -1.0
+           4   (iii+) heuristica + poda       0.0931     41           20      7 Moderada   -1.0
+
+==============================================================================
+  ANALISIS
+==============================================================================
+
+  1) CORRECCION DE LA PODA ALFA-BETA
+     La poda da EXACTAMENTE la misma decision y el mismo valor
+     que la version basica en los 12 casos. Es la garantia
+     teorica del algoritmo: alfa-beta no cambia el resultado,
+     solo evita evaluar lo que no puede cambiarlo.
+
+  2) AHORRO DE LA PODA
+     Nodos totales sin poda : 408
+     Nodos totales con poda : 260
+     Ahorro                 : 36.3 %
+
+  3) EFECTO DE LA HEURISTICA DISENADA
+     La decision CAMBIA en estos casos:
+       0. Base (Guia 5)           prof=2: ingenua -> Moderada  | heuristica -> Baja
+       1. Atleta fresco           prof=2: ingenua -> Moderada  | heuristica -> Baja
+       2. Atleta cargado          prof=2: ingenua -> Moderada  | heuristica -> Baja
+       3. Historial de lesion     prof=2: ingenua -> Moderada  | heuristica -> Baja
+
+     Solo difieren a profundidad [2]. De profundidad 3 en
+     adelante ambas coinciden.
+
+     Lectura: a profundidad 2 la busqueda se corta JUSTO
+     despues de la respuesta de fatiga, sin llegar a ver que
+     el cuerpo tecnico todavia puede DESCANSAR al jugador.
+
+     - La evaluacion INGENUA solo mira el rendimiento, y como
+       la carga moderada rinde mas que la baja, la elige sin
+       enterarse del desgaste que implica.
+     - La HEURISTICA disenada si ve el CO2 metabolico, el
+       riesgo de lesion y la recuperacion. Como en ese
+       horizonte corto no puede contar todavia con el
+       descanso como mitigacion, se protege bajando la carga.
+
+     Cual es MEJOR? A profundidad 2 la heuristica es mas
+     prudente pero mas conservadora de lo necesario: acierta
+     al penalizar el desgaste y se equivoca al no saber que
+     habia una salida mejor un nivel mas abajo. La leccion no
+     es que una evaluacion sea superior a la otra, sino que
+     NINGUNA heuristica compensa cortar la busqueda demasiado
+     pronto.
+
+  4) EFECTO DE LA PROFUNDIDAD
+     0. Base (Guia 5)           CAMBIA con la profundidad
+         prof=2: Baja -> Alta
+         prof=3: Moderada -> Alta -> Descansar
+         prof=4: Moderada -> Alta -> Descansar -> Molestia
+     1. Atleta fresco           CAMBIA con la profundidad
+         prof=2: Baja -> Alta
+         prof=3: Moderada -> Alta -> Descansar
+         prof=4: Moderada -> Alta -> Descansar -> Molestia
+     2. Atleta cargado          CAMBIA con la profundidad
+         prof=2: Baja -> Alta
+         prof=3: Moderada -> Alta -> Descansar
+         prof=4: Moderada -> Alta -> Descansar -> Molestia
+     3. Historial de lesion     CAMBIA con la profundidad
+         prof=2: Baja -> Alta
+         prof=3: Moderada -> Alta -> Descansar
+         prof=4: Moderada -> Alta -> Descansar -> Molestia
+
+     El cambio ocurre entre profundidad 2 y 3, y a partir de
+     ahi la decision se ESTABILIZA:
+
+       prof 2 -> Carga Baja
+                 El agente no alcanza a ver el nivel de DECISION,
+                 asi que no sabe que puede descansar al jugador.
+                 Sin esa salida, la unica forma de protegerlo es
+                 entrenarlo menos.
+
+       prof 3 -> Carga Moderada + Descansar
+                 Al ver un nivel mas descubre una combinacion
+                 mejor: mantener la carga util de entrenamiento y
+                 proteger al atleta el fin de semana. Valor
+                 garantizado +19 frente a los +13.7 de la carga
+                 baja.
+
+       prof 4 -> la MISMA decision
+                 Anadir la respuesta fisica (molestia muscular)
+                 baja el valor garantizado, porque MIN siempre
+                 concede la molestia, pero NO cambia que hacer.
+
+     Conclusion: el horizonte minimo util para este problema es
+     3 niveles. Con 2 el agente toma una decision peor por no
+     ver la mitigacion disponible; con 4 no gana nada nuevo y
+     paga 64 nodos en vez de 28. Para la demo en vivo, por tanto,
+     profundidad 3 es la configuracion correcta.
+
+
+==============================================================================
+  BLOQUE 2 — ANALISIS DE SENSIBILIDAD BAYESIANO
+==============================================================================
+
+  Evidencia fija en todas las corridas: F = Alta (atleta fatigado)
+  Umbral del agente: 0.4
+
+ P(C=Alta) prior  P(C=Alta|F=Alta)  P(E=Exito|F=Alta) Supera umbral  Meta STRIPS  Pasos del plan  CO2 del plan Decision Min-Max  Valor
+            0.10            0.2174             0.4065            SI     estandar               5             9         Moderada   19.0
+            0.25            0.4545             0.3591            NO conservadora               6            10         Moderada   19.0
+            0.40            0.6250             0.3250            NO conservadora               6            10         Moderada   19.0
+            0.60            0.7895             0.2921            NO conservadora               6            10         Moderada   19.0
+            0.80            0.9091             0.2682            NO conservadora               6            10         Moderada   19.0
+
+==============================================================================
+  ANALISIS
+==============================================================================
+
+  1) IMPACTO EN EL POSTERIOR
+     El posterior P(E=Exito|F=Alta) baja de 40.6 % a 26.8 % al mover el prior de 0.1 a 0.8.
+     Es un rango de 13.8 puntos porcentuales: el prior SI importa.
+
+  2) IMPACTO EN EL PLAN DE STRIPS
+     La meta cambia entre prior=0.1 y prior=0.25.
+     Por debajo de ese punto el agente usa el plan estandar
+     (5 acciones, CO2 9). Por encima exige reserva energetica
+     y el plan pasa a 6 acciones (CO2 10).
+
+  3) IMPACTO EN LA DECISION DE MIN-MAX
+     NINGUNO: la decision es 'Moderada'
+     en los 5 casos. Era esperable: Min-Max no usa
+     probabilidades, razona sobre el peor caso. El prior
+     bayesiano no lo toca.
+     Esto es una PROPIEDAD, no un defecto: significa que la
+     recomendacion de carga es robusta a errores de
+     estimacion. Lo que si se mueve es el PLAN de preparacion.
+
+  4) ESTABILIDAD vs FRAGILIDAD
+     FRAGIL en la zona prior ~0.1-0.25: ahi una diferencia
+     pequena de creencia sobre la carga aplicada cambia el
+     plan del atleta.
+     ESTABLE de prior=0.25 en adelante: da igual afinar el
+     numero, el agente siempre protege al atleta.
+
+     Conclusion practica: el dato que hay que registrar con
+     rigor es la CARGA SEMANAL REALMENTE APLICADA. Si el
+     cuerpo tecnico cree que casi nunca aplica cargas altas,
+     el agente se confia. Todo lo demas el modelo lo aguanta.

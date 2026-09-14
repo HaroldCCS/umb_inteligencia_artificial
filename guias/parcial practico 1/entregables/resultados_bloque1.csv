@@ -1,0 +1,49 @@
+Escenario,Profundidad,Version,Tiempo (ms),Nodos,Hojas eval.,Podas,Decision,Rama,Valor
+0. Base (Guia 5),2,(i)  Min-Max basico,0.0164,10,6,0,Moderada,Moderada -> Alta,20.0
+0. Base (Guia 5),2,(ii) Min-Max + alfa-beta,0.0134,9,5,1,Moderada,Moderada -> Alta,20.0
+0. Base (Guia 5),2,(iii) Min-Max + heuristica,0.0165,10,6,0,Baja,Baja -> Alta,13.7
+0. Base (Guia 5),2,(iii+) heuristica + poda,0.0162,10,6,0,Baja,Baja -> Alta,13.7
+0. Base (Guia 5),3,(i)  Min-Max basico,0.0458,28,18,0,Moderada,Moderada -> Alta -> Jugar,24.0
+0. Base (Guia 5),3,(ii) Min-Max + alfa-beta,0.0289,20,11,3,Moderada,Moderada -> Alta -> Jugar,24.0
+0. Base (Guia 5),3,(iii) Min-Max + heuristica,0.047,28,18,0,Moderada,Moderada -> Alta -> Descansar,19.0
+0. Base (Guia 5),3,(iii+) heuristica + poda,0.03,20,11,3,Moderada,Moderada -> Alta -> Descansar,19.0
+0. Base (Guia 5),4,(i)  Min-Max basico,0.131,64,36,0,Moderada,Moderada -> Alta -> Jugar -> Molestia,16.0
+0. Base (Guia 5),4,(ii) Min-Max + alfa-beta,0.0674,36,16,9,Moderada,Moderada -> Alta -> Jugar -> Molestia,16.0
+0. Base (Guia 5),4,(iii) Min-Max + heuristica,0.1356,64,36,0,Moderada,Moderada -> Alta -> Descansar -> Molestia,14.0
+0. Base (Guia 5),4,(iii+) heuristica + poda,0.082,41,20,7,Moderada,Moderada -> Alta -> Descansar -> Molestia,14.0
+1. Atleta fresco,2,(i)  Min-Max basico,0.0134,10,6,0,Moderada,Moderada -> Alta,20.0
+1. Atleta fresco,2,(ii) Min-Max + alfa-beta,0.0123,9,5,1,Moderada,Moderada -> Alta,20.0
+1. Atleta fresco,2,(iii) Min-Max + heuristica,0.0158,10,6,0,Baja,Baja -> Alta,22.7
+1. Atleta fresco,2,(iii+) heuristica + poda,0.0163,10,6,0,Baja,Baja -> Alta,22.7
+1. Atleta fresco,3,(i)  Min-Max basico,0.0403,28,18,0,Moderada,Moderada -> Alta -> Jugar,24.0
+1. Atleta fresco,3,(ii) Min-Max + alfa-beta,0.0314,20,11,3,Moderada,Moderada -> Alta -> Jugar,24.0
+1. Atleta fresco,3,(iii) Min-Max + heuristica,0.0497,28,18,0,Moderada,Moderada -> Alta -> Descansar,28.0
+1. Atleta fresco,3,(iii+) heuristica + poda,0.0322,20,11,3,Moderada,Moderada -> Alta -> Descansar,28.0
+1. Atleta fresco,4,(i)  Min-Max basico,0.1516,64,36,0,Moderada,Moderada -> Alta -> Jugar -> Molestia,16.0
+1. Atleta fresco,4,(ii) Min-Max + alfa-beta,0.0733,36,16,9,Moderada,Moderada -> Alta -> Jugar -> Molestia,16.0
+1. Atleta fresco,4,(iii) Min-Max + heuristica,0.1518,64,36,0,Moderada,Moderada -> Alta -> Descansar -> Molestia,23.0
+1. Atleta fresco,4,(iii+) heuristica + poda,0.0881,41,20,7,Moderada,Moderada -> Alta -> Descansar -> Molestia,23.0
+2. Atleta cargado,2,(i)  Min-Max basico,0.0154,10,6,0,Moderada,Moderada -> Alta,16.0
+2. Atleta cargado,2,(ii) Min-Max + alfa-beta,0.0131,9,5,1,Moderada,Moderada -> Alta,16.0
+2. Atleta cargado,2,(iii) Min-Max + heuristica,0.0162,10,6,0,Baja,Baja -> Alta,-3.3
+2. Atleta cargado,2,(iii+) heuristica + poda,0.0168,10,6,0,Baja,Baja -> Alta,-3.3
+2. Atleta cargado,3,(i)  Min-Max basico,0.0432,28,18,0,Moderada,Moderada -> Alta -> Jugar,20.0
+2. Atleta cargado,3,(ii) Min-Max + alfa-beta,0.032,20,11,3,Moderada,Moderada -> Alta -> Jugar,20.0
+2. Atleta cargado,3,(iii) Min-Max + heuristica,0.0471,28,18,0,Moderada,Moderada -> Alta -> Descansar,2.0
+2. Atleta cargado,3,(iii+) heuristica + poda,0.0343,20,11,3,Moderada,Moderada -> Alta -> Descansar,2.0
+2. Atleta cargado,4,(i)  Min-Max basico,0.1448,64,36,0,Moderada,Moderada -> Alta -> Jugar -> Molestia,12.0
+2. Atleta cargado,4,(ii) Min-Max + alfa-beta,0.074,36,16,9,Moderada,Moderada -> Alta -> Jugar -> Molestia,12.0
+2. Atleta cargado,4,(iii) Min-Max + heuristica,0.1534,64,36,0,Moderada,Moderada -> Alta -> Descansar -> Molestia,-3.0
+2. Atleta cargado,4,(iii+) heuristica + poda,0.0931,41,20,7,Moderada,Moderada -> Alta -> Descansar -> Molestia,-3.0
+3. Historial de lesion,2,(i)  Min-Max basico,0.0153,10,6,0,Moderada,Moderada -> Alta,16.0
+3. Historial de lesion,2,(ii) Min-Max + alfa-beta,0.0143,9,5,1,Moderada,Moderada -> Alta,16.0
+3. Historial de lesion,2,(iii) Min-Max + heuristica,0.0164,10,6,0,Baja,Baja -> Alta,-1.3
+3. Historial de lesion,2,(iii+) heuristica + poda,0.0173,10,6,0,Baja,Baja -> Alta,-1.3
+3. Historial de lesion,3,(i)  Min-Max basico,0.0434,28,18,0,Moderada,Moderada -> Alta -> Jugar,20.0
+3. Historial de lesion,3,(ii) Min-Max + alfa-beta,0.0297,20,11,3,Moderada,Moderada -> Alta -> Jugar,20.0
+3. Historial de lesion,3,(iii) Min-Max + heuristica,0.0484,28,18,0,Moderada,Moderada -> Alta -> Descansar,4.0
+3. Historial de lesion,3,(iii+) heuristica + poda,0.0323,20,11,3,Moderada,Moderada -> Alta -> Descansar,4.0
+3. Historial de lesion,4,(i)  Min-Max basico,0.1364,64,36,0,Moderada,Moderada -> Alta -> Jugar -> Molestia,12.0
+3. Historial de lesion,4,(ii) Min-Max + alfa-beta,0.0708,36,16,9,Moderada,Moderada -> Alta -> Jugar -> Molestia,12.0
+3. Historial de lesion,4,(iii) Min-Max + heuristica,0.1456,64,36,0,Moderada,Moderada -> Alta -> Descansar -> Molestia,-1.0
+3. Historial de lesion,4,(iii+) heuristica + poda,0.0931,41,20,7,Moderada,Moderada -> Alta -> Descansar -> Molestia,-1.0
