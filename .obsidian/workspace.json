@@ -1,0 +1,229 @@
+{
+  "main": {
+    "id": "2ca6f0dc38de28f9",
+    "type": "split",
+    "children": [
+      {
+        "id": "9f018011d3567dfb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9b07c3a13874e2f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CLAUDE.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CLAUDE"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "228c939647a6f98b",
+    "type": "split",
+    "children": [
+      {
+        "id": "3f7e4fa9df30fc1c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "569f5709dad231da",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "8dc5a4fd049347fe",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "e9280d4ffce5c3ee",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "72a36eb0247f516b",
+    "type": "split",
+    "children": [
+      {
+        "id": "ee05a2362855fa15",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "57f9968301ce8bcf",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "CLAUDE.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes"
+            }
+          },
+          {
+            "id": "eb409a57329b7ae7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "CLAUDE.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes"
+            }
+          },
+          {
+            "id": "4699fe115612a2e8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "a8a363f2064f3635",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas las propiedades"
+            }
+          },
+          {
+            "id": "c33d9d5a53b7c267",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "CLAUDE.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false
+    }
+  },
+  "active": "9b07c3a13874e2f2",
+  "lastOpenFiles": [
+    "preguntas.md",
+    "guias/guia 6/contexto.md",
+    "guias/guia 6/actividad.md",
+    "guias/parcial practico 1/actividad.md",
+    "guias/guia 6/contexto.md.bak",
+    "proyecto/decisiones.md",
+    "proyecto/proyecto.md",
+    "guias/parcial practico 1/planeacion.md",
+    "guias/guia 5/entregables/Algoritmo_Rendimiento_deportivo.ipynb",
+    "guias/parcial practico 1/contexto.md",
+    "guias/guia 6/planeacion.md",
+    "guias/guia 5/contexto.md",
+    "guias/guia 4/contexto.md",
+    "guias/guia 3/contexto.md",
+    "guias/guia 2/contexto.md",
+    "guias/guia 1/contexto.md",
+    "guias/guia 5/entregables/Algoritmos_busqueda_futbol_huella_Carbono.ipynb",
+    "proyecto",
+    "guias/parcial practico 1/entregables",
+    "guias/parcial practico 1",
+    "guias/guia 6/recursos/PLANIFIC BAYESIANO.md",
+    "guias/guia 5/actividad.md",
+    "guias/guia 5/recursos/PLANIFICACION-MAX MIN.md",
+    "guias/guia 5/recursos/Planificación STRIPS.md",
+    "guias/guia 4/actividad.md",
+    "guias/guia 4/entregables/Algoritmos_Busqueda_Futbol_ Actualizado.ipynb",
+    "guias/guia 4/recursos/HeuristicAlgm.ipynb",
+    "guias/guia 4/recursos/ALGOR HEURISTICA.md",
+    "guias/guia 6/entregables",
+    "guias/guia 6/recursos",
+    "guias/guia 3/actividad.md",
+    "guias/guia 3/recursos/IA ALGORIT BUSQUEDA.md",
+    "CLAUDE.md",
+    "guias/guia 2/entregables/IA-en-los-Deportes-Olimpicos (1).md",
+    "guias/guia 2/actividad.md"
+  ]
+}
