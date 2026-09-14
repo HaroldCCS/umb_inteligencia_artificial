@@ -5,32 +5,32 @@
 > 📅 Contexto: el parcial se entrega el **jueves 17 de septiembre**. Quedan 3 días.
 
 _Resueltas y archivadas el 14-sep: fecha de entrega · estado real de la guía 5 · si se mantiene el
-factor λ de huella de carbono. Ver `proyecto/decisiones.md`._
+factor λ de huella de carbono · variables de la red bayesiana. Ver `proyecto/decisiones.md`._
+
+✅ **Guía 6 entregada** (14-sep). Lo que queda abierto es solo sobre el parcial.
 
 ---
 
-## 🔴 BLOQUEANTE
+## 🟢 PARA REVISAR (no bloquea, ya está implementado)
 
-### P1. ¿Las CPTs de la red bayesiana les cuadran futbolísticamente?
-Es lo único que bloquea empezar a programar hoy mismo. La red es
-**Carga semanal (C) → Fatiga (F) → Éxito competitivo (E)** — a propósito, las **mismas variables de
-los niveles 1 y 2 del árbol Min-Max** de la guía 5, para que los tres métodos hablen del mismo mundo.
+### P1. ¿Te cuadran las CPTs de la red bayesiana?
+La guía 6 ya está construida con estos valores. **No bloquean nada**: viven en la celda 2 del
+notebook, se cambian en una línea y todo se recalcula solo (tablas, las 4 inferencias, las 2
+figuras y la comparación con Min-Max).
 
-| CPT | Valores propuestos |
-|---|---|
-| `P(C=Alta)` | 0.40 |
-| `P(F=Alta \| C=Alta)` | 0.75 |
-| `P(F=Alta \| C=Moderada)` | 0.30 |
-| `P(E=Éxito \| C=Alta, F=Alta)` | 0.25 |
-| `P(E=Éxito \| C=Alta, F=Baja)` | 0.65 |
-| `P(E=Éxito \| C=Mod, F=Alta)` | 0.45 |
-| `P(E=Éxito \| C=Mod, F=Baja)` | 0.85 |
+| CPT | Valor usado | Lectura |
+|---|---|---|
+| `P(C=Alta)` | 0.40 | 4 de cada 10 semanas se aplica carga alta |
+| `P(F=Alta \| C=Alta)` | 0.75 | Con carga alta llega fatigado 3 de cada 4 veces |
+| `P(F=Alta \| C=Moderada)` | 0.30 | Con carga moderada, 3 de cada 10 |
+| `P(E=Éxito \| Alta, Alta)` | 0.25 | |
+| `P(E=Éxito \| Alta, Baja)` | 0.65 | |
+| `P(E=Éxito \| Mod, Alta)` | 0.45 | |
+| `P(E=Éxito \| Mod, Baja)` | 0.85 | |
 
-Están elegidos para que el **orden** coincida con el de las utilidades de la guía 5
-(`CM_FB` la mejor, `CA_FA` la peor), así que no son números sueltos.
-
-- ¿Les parecen razonables, o el grupo ya había pensado otras variables en clase?
-- Si les sirven, **respondo "ok" y arranco**: eso cierra también la guía 6.
+Están elegidos para que el **orden** coincida con las utilidades de la guía 5 (`Mod+Baja` la mejor,
+`Alta+Alta` la peor), así que no son números sueltos. Si Keiry o Juan Felipe tienen otra intuición
+futbolística, dímelo y los ajusto — es cuestión de minutos.
 
 **Respuesta:**
 

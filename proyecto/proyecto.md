@@ -229,5 +229,5 @@ Toda presentación del curso cierra con esta idea.
 | 3 | Espacio de búsqueda, BFS/DFS/UCS | ✅ presentada (notebook incompleto en disco) |
 | 4 | Heurísticas: Greedy, A\*, Weighted A\* | ✅ entregada — la mejor |
 | 5 | Min-Max + α-β y STRIPS | ✅ entregada — Min-Max, α-β, STRIPS forward/backward y grafo espejo. **Base del parcial** |
-| 6 | Redes bayesianas | 🔴 pendiente — hay `planeacion.md` |
+| 6 | Redes bayesianas | ✅ entregada (14-sep) — notebook + explicación en dos niveles |
 | Parcial 1 | Agente integrador (los 3 métodos) | 🔴 pendiente — **entrega jueves 17 sep 2026** — hay `planeacion.md` con cronograma |

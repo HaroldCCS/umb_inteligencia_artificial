@@ -188,8 +188,12 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "9b07c3a13874e2f2",
+  "active": "569f5709dad231da",
   "lastOpenFiles": [
+    "guias/guia 6/entregables/red_bayesiana.png",
+    "guias/guia 6/entregables/bayes_bars.png",
+    "guias/guia 6/entregables/explicacion_algoritmo.md",
+    "guias/guia 6/entregables/Red_Bayesiana_Rendimiento.ipynb",
     "preguntas.md",
     "guias/guia 6/contexto.md",
     "guias/guia 6/actividad.md",
@@ -219,11 +223,9 @@
     "guias/guia 4/recursos/HeuristicAlgm.ipynb",
     "guias/guia 4/recursos/ALGOR HEURISTICA.md",
     "guias/guia 6/entregables",
-    "guias/guia 6/recursos",
     "guias/guia 3/actividad.md",
     "guias/guia 3/recursos/IA ALGORIT BUSQUEDA.md",
     "CLAUDE.md",
-    "guias/guia 2/entregables/IA-en-los-Deportes-Olimpicos (1).md",
-    "guias/guia 2/actividad.md"
+    "guias/guia 2/entregables/IA-en-los-Deportes-Olimpicos (1).md"
   ]
 }

@@ -46,8 +46,21 @@ parte estructural del modelo:
 medida por GPS/IMU**, nunca como "huella ambiental del equipo". Son cosas distintas y mezclarlas es
 lo único que puede generar preguntas incómodas en la sustentación.
 
-### 📌 Red bayesiana — variables elegidas
-*(propuesta 2026-09-14, pendiente de validación del grupo)*
+### ✅ Red bayesiana — variables elegidas y CONSTRUIDA
+*(propuesta y desarrollada 2026-09-14)*
 `C` = Carga semanal → `F` = Fatiga → `E` = Éxito competitivo. Son **las mismas variables de los
 niveles 1 y 2 del árbol Min-Max**, para que los tres métodos hablen del mismo mundo.
 CPTs y resultados verificados en `guias/guia 6/planeacion.md`.
+
+### 📄 Formato de entregables: notebook + explicación en .md
+*(instrucción de Harold, 2026-09-14)*
+Cada entregable de código lleva **además** un archivo `.md` en `entregables/` que explica el
+algoritmo **en dos niveles**: primero **alto nivel** (sin código, con analogías de la vida real) y
+después **bajo nivel** (función por función). Aplicado por primera vez en la guía 6
+(`explicacion_algoritmo.md`). **Repetir este formato en el parcial.**
+
+### 🎯 Usar los algoritmos del profesor
+*(instrucción de Harold, 2026-09-14)*
+El profesor **revisa los algoritmos**, así que se implementan siguiendo su material: Bayes a mano
+con diccionarios y el formato de resolución en cuatro pasos (Numerador / Contribución /
+Denominador / Resultado), sin librerías de redes bayesianas. Misma regla para Min-Max, α-β y STRIPS.
