@@ -1,7 +1,7 @@
 # Cómo funciona el agente — explicación en dos niveles
 
 **Parcial Práctico 1 · Inteligencia Artificial**
-Keiry Lucía Olaya Noguera · Harold Stiven Camargo Castellanos · Juan Felipe Coronel Montes
+Keiry Lucía Olaya Noguera · Harold Stiven Camargo Castellanos · Juan Felipe Coronel Montes · David ⟪APELLIDOS PENDIENTES⟫
 
 Documento de acompañamiento del código. **Primera parte:** cómo funciona a alto nivel, sin una
 sola línea de código. **Segunda parte:** cómo funciona por dentro, función por función.

@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9f018011d3567dfb",
+        "id": "ce1f6c0e06e549cd",
         "type": "tabs",
         "children": [
           {
-            "id": "9b07c3a13874e2f2",
+            "id": "9abfe2a3a37d5d42",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CLAUDE.md",
+                "file": "proyecto/guion.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CLAUDE"
+              "title": "guion"
             }
           }
         ]
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 372.40625
   },
   "right": {
     "id": "72a36eb0247f516b",
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CLAUDE.md",
+                "file": "guias/parcial practico 1/entregables/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CLAUDE.md",
+                "file": "guias/parcial practico 1/entregables/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CLAUDE.md",
+                "file": "guias/parcial practico 1/entregables/README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -188,18 +188,19 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "569f5709dad231da",
+  "active": "9abfe2a3a37d5d42",
   "lastOpenFiles": [
+    "guias/parcial practico 1/entregables/sensibilidad.png",
+    "guias/parcial practico 1/entregables/explicacion_algoritmo.md",
+    "guias/parcial practico 1/entregables/agent_summary.png",
+    "CLAUDE.md",
     "guias/parcial practico 1/entregables/resultados_bloque2.csv",
     "guias/parcial practico 1/entregables/resultados_bloque1.csv",
     "guias/parcial practico 1/entregables/experimentos_log.txt",
     "guias/parcial practico 1/entregables/agent_log.txt",
-    "guias/parcial practico 1/entregables/sensibilidad.png",
-    "guias/parcial practico 1/entregables/agent_summary.png",
     "guias/parcial practico 1/entregables/bayes_bars.png",
     "guias/parcial practico 1/entregables/strips_graph.png",
     "guias/parcial practico 1/entregables/minmax_tree.png",
-    "guias/parcial practico 1/entregables/explicacion_algoritmo.md",
     "guias/parcial practico 1/entregables/README.md",
     "guias/parcial practico 1/entregables/test_regresion.py",
     "guias/parcial practico 1/entregables/experimentos.py",
@@ -207,7 +208,6 @@
     "guias/parcial practico 1/entregables/minmax.py",
     "guias/parcial practico 1/entregables/strips.py",
     "guias/parcial practico 1/entregables/bayes.py",
-    "guias/parcial practico 1/entregables/dominio.py",
     "guias/guia 6/entregables/red_bayesiana.png",
     "guias/guia 6/entregables/bayes_bars.png",
     "guias/guia 6/entregables/explicacion_algoritmo.md",
@@ -231,7 +231,6 @@
     "guias/guia 5/recursos/Planificación STRIPS.md",
     "guias/guia 4/actividad.md",
     "guias/guia 4/recursos/ALGOR HEURISTICA.md",
-    "guias/guia 3/actividad.md",
-    "guias/guia 3/recursos/IA ALGORIT BUSQUEDA.md"
+    "guias/guia 3/actividad.md"
   ]
 }

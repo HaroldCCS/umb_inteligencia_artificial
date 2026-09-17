@@ -1,7 +1,7 @@
 # Parcial Práctico 1 — Agente Integrador de IA Clásica
 
 **Curso:** Inteligencia Artificial
-**Integrantes:** Keiry Lucía Olaya Noguera · Harold Stiven Camargo Castellanos · Juan Felipe Coronel Montes
+**Integrantes:** Keiry Lucía Olaya Noguera · Harold Stiven Camargo Castellanos · Juan Felipe Coronel Montes · David ⟪APELLIDOS PENDIENTES⟫
 **Sector:** Rendimiento deportivo y analítica avanzada — gestión de carga del atleta
 
 Un agente en Python que integra **Min-Max con poda α-β**, **planificación STRIPS** y una
